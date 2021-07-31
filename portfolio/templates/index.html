@@ -5,155 +5,193 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="../static/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
-	</head>
 
-		<!-- Header -->
-			<section id="header">
-				<header>
-					<h1>Mohidul Abedin</h1>
-					<p> </p>
-				</header>
-				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">About Me</a>
-				</footer>
-			</section>
+<head>
+    <title>Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="../static/assets/css/noscript.css" />
+    </noscript>
+</head>
 
-		<!-- Banner -->
-			<section id="banner">
-				<header>
-					<h2>About Me</h2>
-				</header>
-				<p>I am currently a Sophomore at Stony Brook University studying Computer Science.
-					<br /> I have over 3 years of experience in the field.<br /></p>
-				<footer>
-					<a href="#first" class="button style2 scrolly">Projects</a>
-				</footer>
-			</section>
+<!-- Header -->
+<section id="header">
+    <header>
+        <h1>Mohidul Abedin</h1>
+        <p> </p>
+    </header>
+    <footer>
+        <a href="#banner" class="button style2 scrolly-middle">About Me</a>
+    </footer>
+</section>
 
-
-
-
-
-
-		<!-- Feature 1 -->
-			<article id="first" class="container box style1 right">
-				<a href="http://btd.mohidulabedin.tech/" class="image  fit "><img src="../static/images/btd7.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Bloons Tower Defense 7</h2>
-					</header>
-					<p>An immitaition of popular game series Bloons Tower Defense by Ninja Kiwi</p>
-					<p><a href="http://btd.mohidulabedin.tech/">Website</p>
-					<p><a href="https://github.com/Mabedin00/deathnotepadPlusPlus">Github</p>
-
-				</div>
-			</article>
-
-		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<a href="http://transparency.mohidulabedin.tech/" class="image fit"><img src="../static/images/transparency.png" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Transparency Hackathon Project</h2>
-					</header>
-					<p>A website that keeps track of police misconduct in NYC</p>
-					<p><a href="http://transparency.mohidulabedin.tech/">Website</p>
-					<p><a href="https://github.com/bmoses00/SBUHacks2020">Github</p>
-				</div>
-			</article>
-
-		<!-- Skills -->
-			<article class="container box style2">
-				<header>
-					<a href="#"></a>
-					<h2>Skills</h2>
-					<p>I am full stack developer,<br /> but I specialize in backend.</p>
-				</header>
-				<div class="inner gallery">
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="../static/images/fulls/python.jpg" class="image fit"><img src="../static/images/thumbs/python.jpg" alt="" title="Python" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="../static/../static/images/fulls/javascript.jpg" class="image fit"><img src="../static/images/thumbs/javascript.jpg" alt="" title="Javascript" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="../static/images/fulls/mysql.png" class="image fit"><img src="../static/images/thumbs/mysql.jpg" alt="" title="MySQL" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="../static/images/fulls/mongodb.jpg" class="image fit"><img src="../static/images/thumbs/mongodb.jpg" alt="" title="MongoDB" /></a></div>
-					</div>
-					<div class="row gtr-0">
-						<div class="col-3 col-12-mobile"><a href="../static/images/fulls/java.png" class="image fit"><img src="../static/images/thumbs/java.png" alt="" title="Java" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="../static/images/fulls/C.jpg" class="image fit"><img src="../static/images/thumbs/C.jpg" alt="" title="C" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="../static/images/fulls/apache.jpg" class="image fit"><img src="../static/images/thumbs/apache.jpg" alt="" title="Apache" /></a></div>
-						<div class="col-3 col-12-mobile"><a href="../static/images/fulls/bootstrap.jpg" class="image fit"><img src="../static/images/thumbs/bootstrap.png" alt="" title="Bootstrap" /></a></div>
-					</div>
-				</div>
-			</article>
-
-		<!-- Contact -->
-		<section id ="three">
-			<body class="is-preload">
-				<div class="container-md">
-					{% for type, message in get_flashed_messages(with_categories=true) %}
-						<div id="message" class="alert alert-{{ type }} mx-auto alert-dismissable" role="alert" style="width:80%; text-align:center; margin-top: 10vh">
-							{{ message }}
-							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-					{% endfor %}
-				</div>
-
-			<article class="container box style3">
-				<header>
-					<h2>Contact me</h2>
-				</header>
-				<form method="POST" action="{{ url_for('email',_anchor = "three") }}">
-					<div class="row gtr-50">
-						<div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" /></div>
-						<div class="col-6 col-12-mobile"><input type="email" class="text" name="email" placeholder="Email" /></div>
-						<div class="col-12">
-							<textarea name="message" placeholder="Message"></textarea>
-						</div>
-						<div class="col-12">
-							<ul class="actions">
-								<li><input type="submit" value="Send Message" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-			</article>
-		</section>
+<!-- Banner -->
+<section id="banner">
+    <header>
+        <h2>About Me</h2>
+    </header>
+    <p>I am currently a Sophomore at Stony Brook University studying Computer Science.
+        <br /> I have over 3 years of experience in the field.<br />
+    </p>
+    <footer>
+        <a href="#first" class="button style2 scrolly">Projects</a>
+    </footer>
+</section>
 
 
-		<section id="footer">
-			<ul class="icons">
-				<li><a href="https://github.com/mabedin00" class="icon brands fa-github"><span class="label">Github</span></a></li>
-				<li><a href="https://www.linkedin.com/in/mohidul-abedin-084373172/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-			</ul>
-			<div class="copyright">
-				<ul class="menu">
-					<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</section>
 
-		<!-- Scripts -->
 
-			<script src="../static/assets/js/jquery.min.js"></script>
-			<script src="../static/assets/js/jquery.scrolly.min.js"></script>
-			<script src="../static/assets/js/typed.js"></script>
-			<script src="../static/assets/js/jquery.poptrox.min.js"></script>
-			<script src="../static/assets/js/browser.min.js"></script>
-			<script src="../static/assets/js/breakpoints.min.js"></script>
-			<script src="../static/assets/js/util.js"></script>
-			<script src="../static/assets/js/main.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-			<script>
-				$("#message").delay(1000).fadeTo( 1000, 0 );
-			</script>
 
-	</body>
+<!-- Feature 1 -->
+<article id="first" class="container box style1 left">
+    <a href="https://archive.mohidulabedin.tech/" class="image  fit "><img src="../static/images/archive.png" alt="" /></a>
+    <div class="inner">
+        <header>
+            <h2>Movie Archive</h2>
+        </header>
+        <p>A website for displaying and searching for new and old movies and their crewmembers</p>
+        <p><a href="https://archive.mohidulabedin.tech/">Website</p>
+        <p><a href="https://github.com/Mabedin00/movies">Github</p>
+
+    </div>
+</article>
+
+<!-- Feature 1 -->
+<article class="container box style1 right">
+    <a href="https://btd.mohidulabedin.tech/" class="image  fit "><img src="../static/images/btd7.png" alt="" /></a>
+    <div class="inner">
+        <header>
+            <h2>Bloons Tower Defense 7</h2>
+        </header>
+        <p>An immitaition of the popular game series Bloons Tower Defense by Ninja Kiwi</p>
+        <p><a href="https://btd.mohidulabedin.tech/">Website</p>
+        <p><a href="https://github.com/Mabedin00/deathnotepadPlusPlus">Github</p>
+
+    </div>
+</article>
+
+<!-- Feature 2 -->
+<article class="container box style1 left">
+    <a href="https://transparency.mohidulabedin.tech/" class="image fit"><img src="../static/images/transparency.png"
+            alt="" /></a>
+    <div class="inner">
+        <header>
+            <h2>Transparency Hackathon Project</h2>
+        </header>
+        <p>A website that keeps track of police misconduct in NYC</p>
+        <p><a href="https://transparency.mohidulabedin.tech/">Website</p>
+        <p><a href="https://github.com/bmoses00/SBUHacks2020">Github</p>
+    </div>
+</article>
+
+<!-- Skills -->
+<article class="container box style2">
+    <header>
+        <a href="#"></a>
+        <h2>Skills</h2>
+        <p>I am full stack developer,<br /> but I specialize in backend.</p>
+    </header>
+    <div class="inner gallery">
+        <div class="row gtr-0">
+            <div class="col-3 col-12-mobile"><a href="../static/images/fulls/python.jpg" class="image fit"><img
+                        src="../static/images/thumbs/python.jpg" alt="" title="Python" /></a></div>
+            <div class="col-3 col-12-mobile"><a href="../static/../static/images/fulls/javascript.jpg"
+                    class="image fit"><img src="../static/images/thumbs/javascript.jpg" alt="" title="Javascript" /></a>
+            </div>
+            <div class="col-3 col-12-mobile"><a href="../static/images/fulls/mysql.png" class="image fit"><img
+                        src="../static/images/thumbs/mysql.jpg" alt="" title="MySQL" /></a></div>
+            <div class="col-3 col-12-mobile"><a href="../static/images/fulls/mongodb.jpg" class="image fit"><img
+                        src="../static/images/thumbs/mongodb.jpg" alt="" title="MongoDB" /></a></div>
+        </div>
+        <div class="row gtr-0">
+            <div class="col-3 col-12-mobile"><a href="../static/images/fulls/java.png" class="image fit"><img
+                        src="../static/images/thumbs/java.png" alt="" title="Java" /></a></div>
+            <div class="col-3 col-12-mobile"><a href="../static/images/fulls/C.jpg" class="image fit"><img
+                        src="../static/images/thumbs/C.jpg" alt="" title="C" /></a></div>
+            <div class="col-3 col-12-mobile"><a href="../static/images/fulls/apache.jpg" class="image fit"><img
+                        src="../static/images/thumbs/apache.jpg" alt="" title="Apache" /></a></div>
+            <div class="col-3 col-12-mobile"><a href="../static/images/fulls/bootstrap.jpg" class="image fit"><img
+                        src="../static/images/thumbs/bootstrap.png" alt="" title="Bootstrap" /></a></div>
+        </div>
+    </div>
+</article>
+
+<!-- Contact -->
+<section id="three">
+
+    <body class="is-preload">
+        <div class="container-md">
+            {% for type, message in get_flashed_messages(with_categories=true) %}
+            <div id="message" class="alert alert-{{ type }} mx-auto alert-dismissable" role="alert"
+                style="width:80%; text-align:center; margin-top: 10vh">
+                {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            {% endfor %}
+        </div>
+
+        <article class="container box style3">
+            <header>
+                <h2>Contact me</h2>
+            </header>
+            <form method="POST" action="{{ url_for('email',_anchor = " three") }}">
+                <div class="row gtr-50">
+                    <div class="col-6 col-12-mobile"><input type="text" class="text" name="name" placeholder="Name" />
+                    </div>
+                    <div class="col-6 col-12-mobile"><input type="email" class="text" name="email"
+                            placeholder="Email" /></div>
+                    <div class="col-12">
+                        <textarea name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </article>
+</section>
+
+
+<section id="footer">
+    <ul class="icons">
+        <li><a href="https://github.com/mabedin00" class="icon brands fa-github"><span class="label">Github</span></a>
+        </li>
+        <li><a href="https://www.linkedin.com/in/mohidul-abedin-084373172/" class="icon brands fa-linkedin-in"><span
+                    class="label">Linkedin</span></a></li>
+    </ul>
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</section>
+
+<!-- Scripts -->
+
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/js/jquery.scrolly.min.js"></script>
+<script src="../static/assets/js/typed.js"></script>
+<script src="../static/assets/js/jquery.poptrox.min.js"></script>
+<script src="../static/assets/js/browser.min.js"></script>
+<script src="../static/assets/js/breakpoints.min.js"></script>
+<script src="../static/assets/js/util.js"></script>
+<script src="../static/assets/js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script>
+    $("#message").delay(1000).fadeTo(1000, 0);
+</script>
+
+</body>
+
 </html>
